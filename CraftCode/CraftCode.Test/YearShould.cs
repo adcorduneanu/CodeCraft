@@ -4,14 +4,6 @@ namespace CraftCode.Test
 {
     class YearShould
     {
-        private Year year;
-
-        [SetUp]
-        public void Initialize()
-        {
-            year = new Year();
-        }
-
         [Test]
         public void Be_Leap_Year_If_Is_Divisible_By_400()
         {
