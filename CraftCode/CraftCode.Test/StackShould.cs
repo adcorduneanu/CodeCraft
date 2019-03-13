@@ -17,7 +17,7 @@ namespace Tests
         }
 
         [Test]
-        public void Throw_An_Exception_When_Popped_When_Empty()
+        public void Throw_An_Exception_If_Popped_When_Empty()
         {
             Assert.Throws<InvalidOperationException>(() => stack.Pop());
         }
