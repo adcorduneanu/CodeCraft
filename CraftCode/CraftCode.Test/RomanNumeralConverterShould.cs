@@ -25,18 +25,18 @@ namespace CraftCode.Test
         [TestCase(100, "C")]
         [TestCase(500, "D")]
         [TestCase(1000, "M")]
-        public void Convert_Simple_Numbers_To_Roman_Letter(int arrabicNumber, string romanNumber)
+        public void Convert_Arabic_Simple_Numbers_To_Roman_Letter(int arabicNumber, string romanNumber)
         {
-            Assert.AreEqual(romanNumber, romanNumberalConverter.Convert(arrabicNumber));
+            Assert.AreEqual(romanNumber, romanNumberalConverter.Convert(arabicNumber));
         }
 
         [TestCase(2, "II")]
         [TestCase(453, "CDLIII")]
         [TestCase(3949, "MMMCMXLIX")]
         [TestCase(9999, "MMMMMMMMMCMXCIX")]
-        public void Convert_Complex_Numbers_To_Roman_Letters(int arrabicNumber, string romanNumber)
+        public void Convert_Complex_Numbers_To_Roman_Letters(int arabicNumber, string romanNumber)
         {
-            Assert.AreEqual(romanNumber, romanNumberalConverter.Convert(arrabicNumber));
+            Assert.AreEqual(romanNumber, romanNumberalConverter.Convert(arabicNumber));
         }
     }
 }

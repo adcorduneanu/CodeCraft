@@ -3,7 +3,7 @@ using System.Text;
 
 namespace CraftCode
 {
-    public class RomanNumberalConverter
+    public class RomanNumeralConverter
     {
         private readonly Dictionary<int, string> romanMapping = new Dictionary<int, string>
         {
@@ -22,21 +22,21 @@ namespace CraftCode
             {1, "I"}
         };
 
-        public string Convert(int arrabicNumber)
+        public string Convert(int arabicNumber)
         {
-            if (arrabicNumber < 1)
+            if (arabicNumber < 1)
                 return null;
             
-            if (romanMapping.ContainsKey(arrabicNumber))
-                return romanMapping[arrabicNumber];
+            if (romanMapping.ContainsKey(arabicNumber))
+                return romanMapping[arabicNumber];
 
             StringBuilder convertedValue = new StringBuilder();
             foreach (var map in romanMapping)
             {
-                while (arrabicNumber >= map.Key)
+                while (arabicNumber >= map.Key)
                 {
                     convertedValue.Append(map.Value);
-                    arrabicNumber -= map.Key;
+                    arabicNumber -= map.Key;
                 }
             }
 
