@@ -12,22 +12,22 @@ namespace CraftCode.Test
             year = new Year();
         }
 
-        [TestCase(1600)]
-        public void Be_Leap_Year_If_Is_Divisible_By_400(int year)
+        [Test]
+        public void Be_Leap_Year_If_Is_Divisible_By_400()
         {
-            Assert.IsTrue(this.year.IsLeap(year));
+            Assert.IsTrue(new Year(1600).IsLeap());
+        }
+        
+        [Test]
+        public void Not_Be_Leap_Is_Divisible_By_100_But_Not_By_400()
+        {
+            Assert.IsFalse(new Year(1700).IsLeap());
         }
 
-        [TestCase(1700)]
-        public void Not_Be_Leap_Is_Divisible_By_100_But_Not_By_400(int year)
+        [Test]
+        public void Be_Leap_Year_If_Is_Divisible_By_4()
         {
-            Assert.IsFalse(this.year.IsLeap(year));
-        }
-
-        [TestCase(1604)]
-        public void Be_Leap_Year_If_Is_Divisible_By_4(int year)
-        {
-            Assert.IsTrue(this.year.IsLeap(year));
+            Assert.IsTrue(new Year(1604).IsLeap());
         }
     }
 }

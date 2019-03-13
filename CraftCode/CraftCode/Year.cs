@@ -2,7 +2,14 @@
 {
     public class Year
     {
-        public bool IsLeap(int year)
+        private int year;
+
+        public Year(int value)
+        {
+            year = value;
+        }
+
+        public bool IsLeap()
         {
             if (year % 100 == 0 && year % 400 != 0)
                 return false;
