@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Text;
 
-namespace CraftCode
+namespace CraftCode.Day1
 {
     public class RomanNumeralConverter
     {

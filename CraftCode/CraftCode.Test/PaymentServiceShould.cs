@@ -1,8 +1,8 @@
-﻿using Moq;
+﻿using System;
+using Moq;
 using NUnit.Framework;
-using System;
 
-namespace CraftCode.Test
+namespace CraftCode.Day1.Test
 {
     class PaymentServiceShould
     {

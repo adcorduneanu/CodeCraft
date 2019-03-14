@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 
-namespace CraftCode.Test
+namespace CraftCode.Day1.Test
 {
     public class RomanNumeralConverterShould
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CraftCode
+namespace CraftCode.Day1
 {
     public class Stack
     {

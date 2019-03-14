@@ -5,3 +5,6 @@ CraftCode/.vs/CraftCode/v15/Server/sqlite3/db.lock
 CraftCode/CraftCode/obj/*
 CraftCode/CraftCode.Test/bin/
 CraftCode/CraftCode.Test/obj/
+CraftCode/CraftCode.Day2/obj/
+CraftCode/CraftCode/bin/
+CraftCode/CraftCode.Day2.Test/obj/

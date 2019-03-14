@@ -1,8 +1,7 @@
 using System;
-using CraftCode;
 using NUnit.Framework;
 
-namespace Tests
+namespace CraftCode.Day1.Test
 {
     public class StackShould
     {

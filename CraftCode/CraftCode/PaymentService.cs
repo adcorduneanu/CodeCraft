@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CraftCode
+namespace CraftCode.Day1
 {
     public class PaymentService
     {
